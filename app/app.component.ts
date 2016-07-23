@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { MyComponent } from './my-component.component'
+import { MyTodos } from './my-todos.component'
 
 @Component({
     selector: 'my-app',
-    directives: [MyComponent],
+    directives: [MyTodos],
     template: `
       <h1>My First Angular 2 App</h1>
-      <my-component></my-component>
+      <my-todos></my-todos>
       `
 })
 export class AppComponent { }
