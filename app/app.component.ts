@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { MyComponent } from './my-component.component'
+import { HTTP_PROVIDERS } from "@angular/http";
+
+import { PostComponent } from './components/posts/posts.component'
 
 @Component({
     selector: 'my-app',
-    directives: [MyComponent],
+    directives: [PostComponent],
+    providers:[ HTTP_PROVIDERS ],
     template: `
       <h1>My First Angular 2 App</h1>
-      <my-component></my-component>
+      <posts></posts>
       `
 })
 export class AppComponent { }
